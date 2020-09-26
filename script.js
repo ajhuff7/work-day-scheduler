@@ -15,36 +15,74 @@ $(document).ready(function () {
     setInterval(updateTime, 1000);
     
     
-    // var renderText = renderText (function(textarea) {
-    
-    // $(this).text("textarea")
-    // localStorage.setItem('textarea', text);
+    // This saves input to local storage
+    var textarea = $("#textarea")
+    var input = textarea.value;
 
-    // $("#saveBtn").on("click", function( ) {
-    // localStorage.setItem('textarea', text);
-    // })
+    $("#saveBtn").on("click", function () {
 
-    // renderText();
-// })
+        localStorage.setItem("textarea", input);
+        localStorage.getItem("textarea", input);
+        input.append(textarea)
+    })
+
+    // This retrieves text input to calendar
 
 
+
+    // These variables hold my times values
     var currentHour = moment().format('hh');
     var lateNight = moment().format('11:59:59 pm');
     var newDay = moment().format('hh:mm:ss a');
-    var id = $("#textarea");
-    var calendarHour = [07, 09, 10, 11, 12, 01, 02, 03, 04, 05]
+    var calendarHour = [09, 10, 11, 12, 01, 02, 03, 04, 05]
     // console.log(currentHour)
     // console.log(lateNight)
-    console.log(newDay)
+    // console.log(newDay)
+
+    
+    // This function changes the highlighted entries based on TOD.
 
     function currentTime() {
+
         for (var i = 0; i < calendarHour.length; i++) {
         if (currentHour === calendarHour) {
-            $(this).removeClass("future").addClass("present");
+            $("#09").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#10").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#11").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#12").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#01").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#02").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#03").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#04").removeClass("future").addClass("present");
+        }
+
+        if (currentHour === calendarHour) {
+            $("#05").removeClass("future").addClass("present");
         }
 
         if (lateNight === newDay) {
-            $(id).addClass("future");
+            $(".future").addClass("future");
         }
     }
     };
