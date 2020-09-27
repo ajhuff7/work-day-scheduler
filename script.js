@@ -15,28 +15,21 @@ $(document).ready(function () {
     setInterval(updateTime, 1000);
     
 
+
     
-    // This saves input to local storage
+
+    // This saves text input to local storage...
 
     $(".saveBtn").on("click", function () {
         var textareaId = $(this).data("target");
         var textarea = $("#" + textareaId);
 
         localStorage.setItem(textareaId, textarea.val());
+        localStorage.getItem(textareaId, textarea.val());
+    
         
     })
-
-    // This retrieves text input to calendar
-
-    // function render(){
-    //     var textareaId = $(this).data("target");
-    //     var textarea = $("#" + textareaId);
-        
-    //     localStorage.getItem(textareaId);
-    //     textarea.append(textarea.val());
-    // }
-    
-    // render();
+  
 
 
     // These variables hold my times values
@@ -52,7 +45,7 @@ $(document).ready(function () {
     // This function changes the highlighted entries based on TOD.
 
     function currentTime() {
-    console.log(currentHour, calendarHour.indexOf(currentHour),calendarHour.indexOf("09"))
+    // console.log(currentHour, calendarHour.indexOf(currentHour),calendarHour.indexOf("09"))
 
         if (currentHour === "09") {
             $("#09").removeClass("future").addClass("present");
