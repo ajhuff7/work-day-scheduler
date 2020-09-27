@@ -44,30 +44,31 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #757070;
   color: white;
 }
 
 .present {
-  background-color: #e9905c;
+  background-color: #f1620e;
   color: white;
 }
 
 .future {
-  background-color: #63be89;
-  color: white;
+  background-color: #6ce7fd;
+  color: #757070;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #4c95e9;
+  background-color: #3998a8;
   color: white;
 }
 
 .saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  color: black;
 }
 

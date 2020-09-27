@@ -2,6 +2,8 @@
 
 A daily scheduler with a date field and clock that shows hours, minutes, and seconds. Designated areas for input of of daily tasks arranged by hour which highlight current activities separately from past and future events.
 
+![clock](assets/clock.JPG)
+
 ## Table of Contents
 
 * [Tech Used](#tech_used)
@@ -25,27 +27,24 @@ A daily scheduler with a date field and clock that shows hours, minutes, and sec
 
 ## Usage
  
- This scheduler will allow text input into hourly columns and show the user current and upcoming events as well as past entries. The data utilizes local storage to recall data and continue to display even on page refresh. A running calendar and clock display current date and time.
+ This scheduler will allow text input into hourly columns and show the user current and upcoming events as well as past entries. The data utilizes local storage to recall data. A running calendar and clock display current date and time.
 
 ## Features
 
 - Dynamic code to display current date and time.
+  ![dateTime](assets/dateTime.JPG)
+
 - Area for text entry of calendar events designated my hour.
+  ![divRows](assets/divRows.JPG)
 
 - Save button to save entries to local storage.
+  ![saveBtn](assets/saveBtn.JPG)
 
-  ![code_Snippet.1](https://github.com/ajhuff7/portfolio-one/blob/master/assets/images/code_Snippet.1.png)
-
-- And render function to recall data to assigned areas on page refresh.
-![media_Q.1](https://github.com/ajhuff7/portfolio-one/blob/master/assets/images/media_Q.1.JPG)
-
+- Indexed hours compared to time variable to update past, present, and future time slots.
+  ![hourChange](assets/hourChange.JPG)
 
 - Text areas are linked to dynamic clock to display entries as past, present, and future. 
-
-  ![response.1](https://github.com/ajhuff7/portfolio-one/blob/master/assets/images/response.1.JPG)
-
-
-![media_Q.3](https://github.com/ajhuff7/portfolio-one/blob/master/assets/images/media_Q.3.JPG)
+  ![colorChange](assets/colorChange.JPG)
 
 ## Deployed Link
 
